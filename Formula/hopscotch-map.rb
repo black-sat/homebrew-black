@@ -6,7 +6,6 @@ class HopscotchMap < Formula
   homepage ""
   url "https://github.com/Tessil/hopscotch-map/archive/v2.3.0.tar.gz"
   sha256 "a59d65b552dc7682521989842418c92257147f5068152b5af50e917892ad9317"
-  license ""
 
   depends_on "cmake" => :build
 
