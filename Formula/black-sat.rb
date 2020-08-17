@@ -7,6 +7,8 @@ class BlackSat < Formula
 
   depends_on "cmake" => :build
   depends_on "hopscotch-map" => :build
+  depends_on "catch2" => :build
+  depends_on "fmt"
   depends_on "z3" => :recommended
   depends_on "cryptominisat" => :recommended
 
