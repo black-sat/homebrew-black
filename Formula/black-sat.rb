@@ -1,4 +1,4 @@
-class Black < Formula
+class BlackSat < Formula
   desc "BLACK (Bounded Lᴛʟ sAtisfiability ChecKer)"
   homepage ""
   url "https://github.com/black-sat/black/archive/v0.1.0.tar.gz"
