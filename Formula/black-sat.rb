@@ -3,7 +3,6 @@ class BlackSat < Formula
   homepage ""
   url "https://github.com/black-sat/black/archive/v0.1.0.tar.gz"
   sha256 "3be0f12fef7076606748f663f80f21efb6fdaf6d8d2ea1efc6fb65693766cf4e"
-  license "MIT"
 
   depends_on "cmake" => :build
   depends_on "hopscotch-map" => :build
