@@ -11,6 +11,8 @@ class Boolector < Formula
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
+    system "contrib/setup-btor2tools.sh"
+    system "contrib/setup-lingeling.sh"
     system "cmake", ".", *std_cmake_args
     system "make"
     system "make", "install"
