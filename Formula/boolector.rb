@@ -1,7 +1,7 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class HopscotchMap < Formula
+class Boolector < Formula
   desc "Boolector SMT solver"
   homepage ""
   url "https://github.com/Boolector/boolector/archive/refs/tags/3.2.1.tar.gz"
