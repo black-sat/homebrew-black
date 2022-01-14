@@ -1,8 +1,8 @@
 class BlackSat < Formula
   desc "BLACK (Bounded Lᴛʟ sAtisfiability ChecKer)"
   homepage ""
-  url "https://github.com/black-sat/black/archive/v0.6.3.tar.gz"
-  sha256 "d6accf4d8ffbad69ca1f47a43d2a3996bfc6fd3b91ac3d3cdbc6b47e39b15b48"
+  url "https://github.com/black-sat/black/archive/v0.7.0.tar.gz"
+  sha256 "afd88fd2f39c07876c2df070fea796a10dffa0b006f9ec11ff9056b54c22affb"
 
   depends_on "cmake" => :build
   depends_on "hopscotch-map" => :build
