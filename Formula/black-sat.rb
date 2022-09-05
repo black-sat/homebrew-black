@@ -1,8 +1,8 @@
 class BlackSat < Formula
   desc "BLACK (Bounded Lᴛʟ sAtisfiability ChecKer)"
   homepage "https://www.black-sat.org"
-  url "https://github.com/black-sat/black/archive/v0.9.1.tar.gz"
-  sha256 "e4abb05712a06ae91c6847e8ca8f3056355bac8f4835c8146ea10655f631bbf5"
+  url "https://github.com/black-sat/black/archive/v0.9.2.tar.gz"
+  sha256 "ad8b22886db94240b30221213db840b0d75fd4ed28d732f127eb61ddc3209ce9"
 
   depends_on "llvm" => :build
   depends_on "cmake" => :build
@@ -14,10 +14,10 @@ class BlackSat < Formula
   depends_on "cryptominisat" => :recommended
 
   def install
-    ENV["CC"] = "#{HOMEBREW_PREFIX}/opt/llvm/bin/clang"
-    ENV["CXX"] = "#{HOMEBREW_PREFIX}/opt/llvm/bin/clang++"
-    ENV["LDFLAGS"] = "-L#{HOMEBREW_PREFIX}/opt/llvm/lib -Wl,-rpath,#{HOMEBREW_PREFIX}/opt/llvm/lib"  
-    ENV["CXXFLAGS"] = "-I#{HOMEBREW_PREFIX}/opt/llvm/include"
+    ENV["CC"]=Formula["llvm"].opt_bin/"clang"
+    ENV["CXX"]=Formula["llvm"].opt_bin/"clang++"
+    ENV["LDFLAGS"]="-L#{Formula["llvm"].opt_lib} -Wl,-rpath,#{Formula["llvm"].opt_lib}"
+    ENV["CXXFLAGS"]="-I#{Formula["llvm"].opt_include}"
     system "cmake", ".", "-DENABLE_MINISAT=NO", *std_cmake_args
     system "make"
     system "make", "install"
