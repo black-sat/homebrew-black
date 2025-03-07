@@ -4,6 +4,8 @@ class BlackSat < Formula
   url "https://github.com/black-sat/black/archive/v25.03.0.tar.gz"
   sha256 "19b3c63fec515753dab40b6767683e642450224178b40d476d44eb1d0d7413d7"
 
+  version_scheme 1
+
   depends_on "cmake" => :build
   depends_on "hopscotch-map" => :build
   depends_on "catch2" => :build
