@@ -31,7 +31,7 @@ class HopscotchMap < Formula
   depends_on "cmake" => :build
 
   def install
-    system "cmake", ".", *std_cmake_args
+    system "cmake", ".", "-DCMAKE_POLICY_VERSION_MINIMUM=3.5", *std_cmake_args
     system "make", "install"
   end
 end
