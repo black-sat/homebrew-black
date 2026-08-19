@@ -2,7 +2,7 @@ class BlackSat < Formula
   desc "BLACK (Bounded Lᴛʟ sAtisfiability ChecKer)"
   homepage "https://www.black-sat.org"
   url "https://github.com/black-sat/black/archive/v26.05.0.tar.gz"
-  sha256 "a94e3a0e85c5252dc2e5829da2c6ece5a63796cefa9b4382ec3553d38eb06d8d"
+  sha256 "2eec94e524d8b302832137c20c531a8aff2b474930b408fc264676b034723297"
 
   version_scheme 1
 
